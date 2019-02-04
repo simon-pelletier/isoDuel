@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>IsoDuel</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="soundControl"></div>
+    <div id="obControl"></div>
+
+    <div id="endGame">
+      <div id="winner"></div>
+    </div>
+
+    <div id="message"></div>
+    <img id="p1bg" src="img/p1bg.png"/>
+    <img id="p2bg" src="img/p2bg.png"/>
+    <div id="info1">
+      <div id="name1"></div>
+      <div id="bag1"></div>
+    </div>
+
+    <div id="info2">
+      <div id="name2"></div>
+      <div id="bag2"></div>
+    </div>
+
+    <div id="actions" class="actions"></div>
+
+    <div id="clouds">
+      <img id="cloud01" src="img/cloud1.png"/>
+      <img id="cloud02" src="img/cloud2.png"/>
+    </div>
+
+    <canvas id="isocanvas"></canvas>
+
+    <img id="background" src="img/bg.jpg"></img>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src='js/jquery.playSound.js'></script>
+
+    <script src="js/helpers.js"></script>
+
+    <script src="js/tile.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/weapon.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/ui.js"></script>
+
+    <script>
+    $(function() {
+      Ui.newGame()
+    });
+
+    function SelectAll(id){
+      document.getElementById(id).focus();
+      document.getElementById(id).select();
+    }
+    </script>
+
+  </body>
+</html>
